@@ -1,0 +1,47 @@
+<Jumbo>
+  <h2>{{@store.title}}</h2>
+  <p>"These are organic vegetables also fresh and easy to buy now from our app"
+    {{@store.city}}.</p>
+
+  <ShareButton
+    @text='Check out {{@store.title}} on grocery store!'
+    @hashtags='store,buy,authentic,blessed,grocerystore'
+    @via='emberjs'
+  >
+    Share on Twitter
+  </ShareButton>
+</Jumbo>
+
+<article class='store detailed'>
+  <Store::Image src={{@store.image}} alt='A picture of {{@store.title}}' />
+
+  <div class='details'>
+    <h3>About {{@store.title}}</h3>
+
+    <div class='detail homedelivery'>
+      <span>homedelivery:</span>
+      {{@store.homedelivery}}
+    </div>
+    <div class='detail type'>
+      <span>Type:</span>
+      {{@store.type}}
+      –
+      {{@store.category}}
+    </div>
+    <div class='detail location'>
+      <span>Location:</span>
+      {{@store.city}}
+    </div>
+    <div class='detail Rating'>
+      <span>Rating:</span>
+      {{@store.rating}}
+    </div>
+    <div class='detail stock'>
+      <span>stock:</span>
+      {{@store.stock}}
+    </div>
+    <div class='detail description'>
+      <p>{{@store.description}}</p>
+    </div>
+  </div>
+</article>

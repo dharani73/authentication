@@ -1,0 +1,45 @@
+<div class='box'>
+
+  <form class='login-form' {{on 'submit' this.login}}>
+
+    <h1>Sign in</h1>
+
+    <div class='form-input-material'>
+
+      <label for='username'>Username</label>
+
+      <input
+        type='text'
+        name='username'
+        id='username'
+        placeholder=' '
+        autocomplete='off'
+        class='form-control-material'
+        {{on 'change' this.updateUsername}}
+      />
+
+    </div>
+
+    <div class='form-input-material'>
+
+      <label for='password'>Password</label>
+
+      <input
+        type='password'
+        name='password'
+        id='password'
+        placeholder=' '
+        autocomplete='off'
+        class='form-control-material'
+        {{on 'change' this.updatePassword}}
+      />
+
+    </div>
+
+    <button type='submit' class='btn btn-primary btn-ghost' value='Login'>Sign
+      in</button>
+
+  </form>
+  
+
+</div>

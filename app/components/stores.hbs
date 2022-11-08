@@ -1,0 +1,14 @@
+<div class='stores'>
+  <label>
+    <span>Where would you like to stay?</span>
+    <Input @value={{this.query}} class='light' />
+  </label>
+
+  <ul class='results'>
+    <Stores::Filter @stores={{@stores}} @query={{this.query}} as |results|>
+      {{#each results as |property|}}
+        <li><Store @store={{property}} /></li>
+      {{/each}}
+    </Stores::Filter>
+  </ul>
+</div>

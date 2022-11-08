@@ -1,0 +1,20 @@
+{
+  "data": {
+    "type": "stores",
+    "id": 1,
+    "attributes": {
+      "title": "Fresh Vegetables",
+      "homedelivery": "Available",
+      "city": "hyderabad",
+      "rating": "5 star",
+      "stock": "Available",
+      "location": {
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      "category": "Vegetables",
+      "image": "https://cdn.britannica.com/17/196817-050-6A15DAC3/vegetables.jpg",
+      "description": "These are organic vegetables also fresh and easy to buy now from our app."
+    }
+  }
+}
